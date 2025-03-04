@@ -91,3 +91,23 @@ let key = prompt("Would you like to enter the CALCULATOR?");
             document.getElementById('explanation').innerText = `${generateTally(num1)} / ${generateTally(num2)} = ${generateTally(result)}`;
             logOperation('/', num1, num2, result);
         }
+
+        function updateGreeting() {
+            // Get the new values from the input fields
+            let newName = document.getElementById("customName").value;
+            let newMessage = document.getElementById("customMessage").value;
+            
+            // Update the greeting in the <h1> element.
+            // Using querySelector to target the h1 inside the .calculator container.
+            let greetingHeader = document.querySelector(".calculator h1");
+            if (newName.trim() !== "") {
+                greetingHeader.textContent = "Welcome to Calculator, " + newName + "!";
+            }
+            
+            // Update the brief message in the first <p> element that does not have an id.
+            // This targets the brief message ("Take a step into the Math Dimension").
+            let messagePara = document.querySelector(".calculator p:not([id])");
+            if (newMessage.trim() !== "") {
+                messagePara.textContent = newMessage;
+            }
+        }
