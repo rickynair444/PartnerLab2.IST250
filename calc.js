@@ -10,7 +10,7 @@ let key = prompt("Would you like to enter the CALCULATOR?");
 
         alert("Welcome to the CALCULATOR!");
         let name = prompt("Enter your name:");
-        alert("Hello, " + name + "!");
+        alert("Hello, " + name + "! Welcome to the CALCULATOR!");
 
         // Function to add To Do item
         function addToDo() {
