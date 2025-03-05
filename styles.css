@@ -10,6 +10,7 @@ input[type="button"]{
     cursor: pointer;
     font-family: 'Courier New', Courier, monospace;
     border: solid 1px white;
+    background-color: #000000;
 }
 input[value="+ ADD +"] {
     background-color: #4CAF50; /* Green */
@@ -25,6 +26,9 @@ input[value="* MULTIPLY *"] {
 
 input[value="/ DIVIDE /"] {
     background-color: #2196F3; /* Blue */
+}
+input[value="Update Greeting & Message"]{
+    background-color: #4CAF50; /* Green */
 }
 input[type="text"]{
     background-color: black;
@@ -132,4 +136,14 @@ input[value="Add To Do"] {
     background-color: #4CAF50; /* Green */
     color: white;
 
+}
+input[value="Delete To Do"] {
+    background-color: #f44336; /* Red */
+    color: white;
+}
+#customName{
+    font-size: 20px;
+}
+#customMessage{
+    font-size: 20px;
 }

@@ -11,6 +11,7 @@ let key = prompt("Would you like to enter the CALCULATOR?");
         alert("Welcome to the CALCULATOR!");
         let name = prompt("Enter your name:");
         alert("Hello, " + name + "! Welcome to the CALCULATOR!");
+        document.getElementById('greeting').innerText = `Welcome to Calculator, ${name}!`;
 
         // Function to add To Do item
         function addToDo() {
